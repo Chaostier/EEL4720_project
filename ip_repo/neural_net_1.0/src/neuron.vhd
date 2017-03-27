@@ -9,12 +9,12 @@ entity neuron is
 
 generic(WIDTH: positive);
 port(
-
+    inputs : std_logic_vector(WIDTH-1 downto 0)
   );
 
 end entity;
 
-architecture BHV of adder is
+architecture BHV of neuron is
 
 begin
 
